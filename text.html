@@ -5,14 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VayuEDU - Study Abroad</title>
     <link rel="stylesheet" href="homepage/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+    
+    
 </head>
 <body>
     <header>
         <div class="company-logo">
-            <a href="text.html"><img src="../logo.jpg" alt="VayuEDU Logo"></a>
+            <a href="text.html"><img src="./homepage/media/logo .jpg" alt="VayuEDU Logo"></a>
         </div>
         <nav>
+            <input type="checkbox" id="check">
+            <label for="check" >
+                <i class="fas fa-bars" id="btn"></i>
+<i class="fas fa-times" id="cancel"></i>
+
+                
+            </label>
             <ul class="menu">
                 <li><a href="#">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
@@ -57,7 +68,7 @@
 
     <section class="partners-section">
         <div class="partners-banner">
-            <h2>Increase Your Chances of Success by Getting Admits from These Universities!</h2>
+            <h2 id="univ">Increase Your Chances of Success by Getting Admits from These Universities!</h2>
         </div>
     
         <div class="universities-container">
@@ -118,6 +129,32 @@
         <p class="question">What if I need assistance beyond university shortlisting?</p>
         <p class="answer">Our support extends beyond just university shortlisting. We assist you with every step of the study abroad journey...</p>
     </div>
+
+<h1 id="querry"> Looking for more details? Post your querries </h1>
+
+<div class="formcontainer">
+    <form>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+        </select>
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+
+        <button type="submit" class="btn">Submit</button>
+    </form>
+</div>
+
     <section class="quote">
         <p>“Education is the most powerful weapon which you can use to change the world.”</p>
         <span>- Nelson Mandela</span>
